@@ -5,4 +5,6 @@ There are very good explanations on the internet about what the Game of Life is 
 
 There is software out there that can do the same but in a prettier package, e.g. the Mathgrapher v2.03 (https://www.mathgrapher.com/cellular-automata-1d-rule/). My code has the advantage that it is short and very easy to understand. It does not even have a function outside of main().
 
+To keep it simple, I created the code to print the patterns on the screen of an ANSI terminal. Green characters (cells) on a black background is a must. 
+
 The best and most comprehensive book about this topic is Stephen Wolfram's "A New Kind of Science" (https://www.wolframscience.com/nks/p24--how-do-simple-programs-behave/). He documented all the different patterns and gave them a number. For example my code 1dlife-30.c is an implementation of his rule 30.
