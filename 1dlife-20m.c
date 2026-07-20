@@ -58,7 +58,7 @@ int main(void) {
       // Rule 1 - Cell stays alive if 1 or 2 live neighbor cells
       if(x[i] == ALIVE && (aliveN == 1 || aliveN == 2))
         y[i] = ALIVE;
-      // Rule 2 - Alive cells dies if 3 or 4 alive neighbor cells
+      // Rule 2 - Alive cell dies if 3 or 4 alive neighbor cells
       else if(x[i] == ALIVE && (aliveN == 3 || aliveN == 4))
         y[i] = DEAD;
       // Rule 3 - Cell reborn if 2 or 3 alive neighbor cells
