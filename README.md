@@ -8,3 +8,5 @@ There is software out there that can do the same but in a prettier package, e.g.
 To keep it simple, I created the code to print the patterns on the screen of an ANSI terminal. Green characters (cells) on a black background is a must. 
 
 The best and most comprehensive book about this topic is Stephen Wolfram's "A New Kind of Science" (https://www.wolframscience.com/nks/p24--how-do-simple-programs-behave/). He documented all the different patterns and gave them a number. For example my code 1dlife-30.c is an implementation of his rule 30.
+
+Alle files startung with "1dlife" are game of life variations in one dimension. The meaning of this is that decisions for the next cell generation are only done by taking the state of cells to the left and right into consideration. Files starting with "2dlife" are game of life variations in two dimensions. A number of random numbers of cells start in the middle of the screen. Decisions for the next generation of cells are done by looking at the state of all eight neighbor cells. 
