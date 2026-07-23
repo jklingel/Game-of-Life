@@ -14,6 +14,8 @@
 #define LOOP 50 // Number of iterations
 #define ALIVE '*'
 #define DEAD ' '
+#define cursorOff printf("%c[?25l", 27)
+#define cursorOn printf("%c[?25h", 27)
 #define clearScr printf("%c[2J", 27)
 #define soundBell putchar('\a')
 #define setColor putchar(27); printf("[1;32;40m") // green on black
@@ -39,6 +41,7 @@ int main(void) {
   unsigned int x, y; // Coordinates on the screen
 
   clearScr;
+  cursorOff;
   setColor;
 
   // Seed the random number generator with current time
@@ -76,6 +79,7 @@ int main(void) {
 
   if(aliveS == 0) {
     printf("\nNo alive start cells!\n");
+    cursorOn;
     return(0);
   }
   else {
@@ -141,9 +145,11 @@ int main(void) {
 
     if(alive == 0) {
       printf("\nNo more alive cells!\n");
+      cursorOn;
       return(0);
     }
   } while(n<LOOP);
   printf("\n");
+  cursorOn;
   return(0);
 }
