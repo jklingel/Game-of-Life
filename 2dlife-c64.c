@@ -1,5 +1,5 @@
 /* 2D Life (The Game of Life) for ANSI Terminals */
-/* Idea by John Conway, 1978                     */
+/* Idea by John Conway, 1970                     */
 /* Coding by Jan Klingel, 07/2026                */
 /* Version for Commodore 64 & 128 in POWER C     */
 
