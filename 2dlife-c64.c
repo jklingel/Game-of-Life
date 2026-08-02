@@ -1,7 +1,8 @@
-/* 2D Life (The Game of Life) for ANSI Terminals */
+/* 2D Life (The Game of Life)                    */
 /* Idea by John Conway, 1970                     */
 /* Coding by Jan Klingel, 07/2026                */
 /* Version for Commodore 64 & 128 in POWER C     */
+/* Version 1.0                                   */
 
 #include <stdio.h>
 #include <poke.h>   /* poke(), peek()            */
