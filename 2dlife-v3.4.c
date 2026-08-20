@@ -206,8 +206,8 @@ char* argv[];
         sleep(1);
 #endif
 
-        for (r = 1;r < MAXR - 1;r++) {
-            for (c = 1;c < MAXC - 1;c++) {
+        for (c = 1;c < MAXC - 1;c++) {
+            for (r = 1;r < MAXR - 1;r++) {
 
                 // Count neighbors of current cell X(x,y)
                 aliveN = 0;
@@ -245,8 +245,8 @@ char* argv[];
         // Draw new screen with next generation
         n++;
         alive = 0;
-        for (r = 1;r < MAXR - 1;r++) {
-            for (c = 1;c < MAXC - 1;c++) {
+        for (c = 1;c < MAXC - 1;c++) {
+            for (r = 1;r < MAXR - 1;r++) {
                 if (screenY[r][c] == ALIVE)
                     alive++;
                 gotoxy(c, r);
