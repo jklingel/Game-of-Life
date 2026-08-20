@@ -97,13 +97,13 @@ int checkOS(void) {
 #else
     return(3); // Unknown OS
 #endif
-}
 
 int main(argc, argv)
 int argc;
 char* argv[];
 {
 
+#if defined(_WIN32) || defined(_WIN64)
     // The following block is necessary to tell Windows CMD to accept ANSI ESC sequences 
     // Copied from YangXiaoPo-MSFT @ StackOverflow
 
@@ -120,6 +120,7 @@ char* argv[];
     if (!SetConsoleMode(hOut, dwMode)) {
         return GetLastError();
     }
+#endif
 
     // Check OS
     if (checkOS() != (1 || 2)) {
