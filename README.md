@@ -11,4 +11,4 @@ The best and most comprehensive book about this topic is Stephen Wolfram's "A Ne
 
 Alle files startung with "1dlife" are game of life variations in one dimension. The meaning of this is that decisions for the next cell generation are only done by taking the state of cells to the left and right into consideration. Files starting with "2dlife" are game of life variations in two dimensions. A number of random numbers of cells start in the middle of the screen. Decisions for the next generation of cells are done by looking at the state of all eight neighbor cells. 
 
-As of 07/25/2026, the file 2dlife-c64.c is the version for the Commodore 64 computer, written in POWER C.
+Files with the name 2dlife-c64*.c are the version for the Commodore 64 computer, written in POWER C. 
