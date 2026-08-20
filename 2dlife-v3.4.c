@@ -97,6 +97,7 @@ int checkOS(void) {
 #else
     return(3); // Unknown OS
 #endif
+}
 
 int main(argc, argv)
 int argc;
